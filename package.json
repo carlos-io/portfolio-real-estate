@@ -1,0 +1,31 @@
+{
+  "name": "dev-bootstrap",
+  "version": "1.0.0",
+  "description": "Quick start base for web development",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "serve": "gulp serve"
+  },
+  "keywords": [
+    "bootstrap",
+    "web",
+    "development",
+    "quick",
+    "start",
+    "starter"
+  ],
+  "author": "Carlos Velazquez",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browsersync": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "sass": "^1.23.0",
+    "webpack": "^4.41.0"
+  }
+}
