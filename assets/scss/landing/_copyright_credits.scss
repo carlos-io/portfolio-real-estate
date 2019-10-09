@@ -1,0 +1,20 @@
+#copyright-credits {
+    background-color: $darkBrown;
+
+    .container {
+        text-align: center;
+        padding: 33px 0;
+    }
+
+    span {
+        &, a {
+            color: #D2CAC9;
+            font-size: 13px;
+            font-weight: 200;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+}

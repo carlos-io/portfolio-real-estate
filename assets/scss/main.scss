@@ -1,3 +1,182 @@
 @import "reset";
 @import "variables";
+@import "landing/top";
+@import "landing/search";
+@import "landing/featured";
+@import "landing/reasons";
+@import "landing/weekly_house";
+@import "landing/call2action";
+@import "landing/reviews";
+@import "landing/contact";
+@import "landing/bottom";
+@import "landing/copyright_credits";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Palanquin&display=swap');
 
+body, a, ::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: $offBlack;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2 {
+    color: $offBlack;
+    font-size: 32px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 32px;
+    font-size: 14px;
+    color: $lightGray;
+}
+
+.soft-shadow {
+    -webkit-box-shadow: 0px 12px 63px 2px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 12px 63px 2px rgba(0,0,0,0.24);
+    box-shadow: 0px 12px 63px 2px rgba(0,0,0,0.24);
+}
+
+.soft-drop-shadow {
+    -webkit-box-shadow: 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
+}
+
+.right-arrow {
+    margin-left: 40px;
+    margin-right: 7px;
+}
+
+.left-arrow {
+    i {
+        padding: 10px 5px 10px 15px;
+    }
+}
+
+.right-arrow {
+    i {
+        padding: 10px 5px;
+    }
+}
+
+.fa-long-arrow-left, .fa-long-arrow-right {
+    color: $offWhite;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        color: $paleBrown;
+    }
+}
+
+.fa-long-arrow-left {
+    -webkit-transform:scale(1,1.3); /* Safari and Chrome */
+    -moz-transform:scale(1,1.3); /* Firefox */
+    -ms-transform:scale(1,1.3); /* IE 9 */
+    -o-transform:scale(1,1.3); /* Opera */
+    transform:scale(1,1.3); /* W3C */
+}
+
+.fa-long-arrow-right {
+    -webkit-transform:scale(3,1.2); /* Safari and Chrome */
+    -moz-transform:scale(3,1.2); /* Firefox */
+    -ms-transform:scale(3,1.2); /* IE 9 */
+    -o-transform:scale(3,1.2); /* Opera */
+    transform:scale(3,1.2); /* W3C */
+}
+
+@media only screen and (min-width: 240px) and (max-width: 767px) {
+    #top {
+        height: 630px;
+
+        #logo-small {
+            padding-top: 25px;
+        }
+
+        #navigation {
+            padding-top: 17px;
+
+            #hamburger {
+                display: block;
+            }
+
+            #links {
+                ul {
+                    li {
+                        display: block;
+                        visibility: hidden;
+                        opacity: 0;
+                        margin-top: 16px;
+                        font-size: 16px;
+                        padding-right: 0;
+                        text-align: right;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+                &.change ul {
+                    li {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            #signup {
+                display: none;
+            }
+        }
+
+        #opening {
+            #statement {
+                width: 210px;
+                font-size: 45px;
+                letter-spacing: -3px;
+            }
+
+            #description {
+                width: 100%;
+                font-size: 12px;
+                margin-top: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+    #top {
+
+        #opening {
+            #statement {
+                width: 260px;
+                font-size: 55px;
+                letter-spacing: -3px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 815px) {
+    #top {
+        #navigation {
+            #links {
+                ul {
+                    li {
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

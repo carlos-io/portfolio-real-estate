@@ -4,12 +4,477 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content=",,">
-    <title></title>
+    <meta name="description" content="Real Estate Demo">
+    <meta name="keywords" content="real,estate,home,apartment,town,house,condo,land">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+    <title>Real Estate</title>
 </head>
 <body>
+    <section id="top">
+        <div class="container">
+            <div id="logo-small">
+                <a href="#">housy<span></span></a>
+            </div>
+            <div id="navigation">
+                <div id="hamburger" onclick="javascript:this.classList.toggle('change');document.getElementById('links').classList.toggle('change')">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="signup">
+                    <a href="#">
+                        <span>
+                            <span>Sign Up</span>
+                            <span id="gotoform">
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div id="opening">
+                <div id="statement">Let Us Guide You Home</div>
+                <div id="description">
+                    Housy is an all-in-one real estate site that gives you the
+                    local scoop about homes for sale, apartments for rent and
+                    neighborhood insights.
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="search">
+        <div class="container">
+            <div id="filters">
+                <div id="general">
+                    <ul>
+                        <li><a href="#" id="rent">Rent</a></li>
+                        <li><a href="#" id="buy">Buy</a></li>
+                        <li><a href="#" id="sell">Sell</a></li>
+                    </ul>
+                </div>
+                <div id="specifics" class="soft-drop-shadow">
+                    <div id="location">
+                        <div>
+                            <span class="filter-type">Location</span>
+                            <a href="#">
+                                <span class="filter-dropdown">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="filter-value">New Brendon</div>
+                    </div>
+                    <div id="type">
+                        <div>
+                            <span class="filter-type">Property type</span>
+                            <a href="#">
+                                <span class="filter-dropdown">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="filter-value">Duplex</div>
+                    </div>
+                    <div id="price">
+                        <div>
+                            <span class="filter-type">Max price</span>
+                            <a href="#">
+                                <span class="filter-dropdown">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="filter-value">$5,000</div>
+                    </div>
+                    <div id="search-button">
+                        <a href="#">
+                            <div class="soft-shadow">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured">
+        <div class="container">
+            <div id="featured-menu">
+                <div>
+                    <ul class="featured-menu-links">
+                        <a href="#"><li>House</li></a>
+                        <a href="#"><li>Apartment</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="featured-head-title">Featured Homes</h2>
+                </div>
+                <div>
+                    <ul class="featured-menu-links">
+                        <a href="#"><li>Land</li></a>
+                        <a href="#"><li>View all</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="featured-items">
+                <a href="#">
+                    <div class="featured-item soft-drop-shadow">
+                        <div class="featured-item-img featured-item-img-1">
+                        </div>
+                        <div class="featured-item-title">
+                            The Coach House
+                        </div>
+                        <div class="featured-item-details">
+                            <div class="featured-item-rooms">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i></span>
+                                5
+                            </div>
+                            <div class="featured-item-baths">
+                                <span><i class="fa fa-bath" aria-hidden="true"></i></span>
+                                3
+                            </div>
+                            <div class="featured-item-price">
+                                <span><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                                4500
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="featured-item soft-drop-shadow">
+                        <div class="featured-item-img featured-item-img-2">
+                        </div>
+                        <div class="featured-item-title">
+                            The Old Rectory
+                        </div>
+                        <div class="featured-item-details">
+                            <div class="featured-item-rooms">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i></span>
+                                5
+                            </div>
+                            <div class="featured-item-baths">
+                                <span><i class="fa fa-bath" aria-hidden="true"></i></span>
+                                3
+                            </div>
+                            <div class="featured-item-price">
+                                <span><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                                4500
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="featured-item soft-drop-shadow">
+                        <div class="featured-item-img featured-item-img-3">
+                        </div>
+                        <div class="featured-item-title">
+                            Honeysuckle Cottage
+                        </div>
+                        <div class="featured-item-details">
+                            <div class="featured-item-rooms">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i></span>
+                                5
+                            </div>
+                            <div class="featured-item-baths">
+                                <span><i class="fa fa-bath" aria-hidden="true"></i></span>
+                                3
+                            </div>
+                            <div class="featured-item-price">
+                                <span><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                                4500
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="featured-item soft-drop-shadow">
+                        <div class="featured-item-img featured-item-img-4">
+                        </div>
+                        <div class="featured-item-title">
+                            La Petite Maison
+                        </div>
+                        <div class="featured-item-details">
+                            <div class="featured-item-rooms">
+                                <span><i class="fa fa-bed" aria-hidden="true"></i></span>
+                                5
+                            </div>
+                            <div class="featured-item-baths">
+                                <span><i class="fa fa-bath" aria-hidden="true"></i></span>
+                                3
+                            </div>
+                            <div class="featured-item-price">
+                                <span><i class="fa fa-dollar" aria-hidden="true"></i></span>
+                                4500
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div id="featured-navigation">
+                <span class="left-arrow">
+                    <a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                </span>
+                <span class="right-arrow">
+                    <a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="reasons">
+        <div class="container">
+            <div id="reasons-header">
+                <h2>Why Choose Us</h2>
+                <p>
+                    <span>Housy</span> group is committed to helping its clients reach their goals
+                </p>
+            </div>
+            <div id="reasons-details">
+                <div class="reasons-details-container">
+                    <a href="#">
+                        <div>
+                            <img src="img/insurance.png" alt="property insurance">
+                        </div>
+                        <div>
+                            <p>Property Insurance</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="reasons-details-container">
+                    <a href="#">
+                        <div>
+                            <img src="img/tax.png" alt="tax advantage">
+                        </div>
+                        <div>
+                            <p>Tax Advantage</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="reasons-details-container">
+                    <a href="#">
+                        <div>
+                            <img src="img/commission.png" alt="lowest commission">
+                        </div>
+                        <div>
+                            <p>Lowest Commission</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weekly-house">
+        <div id="weekly-house-highlight">
+            <div>
+                <h2>House of the Week</h2>
+                <p>
+                    $2.2 million for a renovated 19th century home in Moss Park.
+                    Renovated the interior and built a three-story rear addition that blends.
+                </p>
+            </div>
+        </div>
+        <div id="weekly-house-tour-button">
+            <a href="">
+                <div>
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+            </a>
+            <div>Take a Tour</div>
+        </div>
+    </section>
+
+    <section id="call-to-action">
+        <div class="container">
+            <div id="call-to-action-left">
+                <div id="c2a-left-dialog" class="c2a-dialog">
+                    <div>
+                        <p class="c2a-text">
+                            List your home with a real estate agent and simplify the selling process.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="c2a-link">
+                                Sell a <span>home</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="call-to-action-right">
+                <div id="c2a-right-dialog" class="c2a-dialog">
+                    <div>
+                        <p class="c2a-text">
+                            Our home buying process is easy and will help you make the best choice.
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <span class="c2a-link">
+                                Buy a <span>home</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <div id="review-left">
+                <div id="review-quote">
+                    <p>"</p>
+                </div>
+                <div>
+                    <p id="review-text">
+                        They were always easy to reach even when they were on vacation.
+                        They helped us out with whatever issues came up, and we had a number of them.
+                        From home repairs to changing lenders, they guided us through the process
+                    </p>
+                    <p id="review-date">
+                        Apr 17, 2017
+                    </p>
+                </div>
+                <div id="reviewer">
+                    <div id="reviewer-img"><img src="img/review-usr-1.jpg" alt="face of reviewer"></div>
+                    <div id="reviewer-name-title">
+                        <p>Eunice Fowler</p>
+                        <p>CEO of Interactive Brokers Group</p>
+                    </div>
+                </div>
+                <div id="review-nav">
+                    <a href="#">
+                        <span class="left-arrow">
+                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="right-arrow">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div id="review-right">
+                <img src="img/review-cabin.jpg" alt="cabin home in the fall">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div id="contact-header">
+                <h2>Want to Sell Your Property?</h2>
+                <h4>Contact Us</h4>
+            </div>
+            <div id="contact-form" class="soft-drop-shadow">
+                <form action="#" method="POST">
+                    <textarea name="message" id="contact-form-message" rows="3" placeholder="Message"></textarea>
+                    <input type="email" name="email" id="contact-form-email" placeholder="Email address">
+                    <button type="submit"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <div id="contact-background">
+                <img src="img/contact-bg.jpg" alt="sketch of a home">
+            </div>
+        </div>
+    </section>
+
+    <section id="bottom">
+        <div class="container">
+            <div id="logo-social">
+                <div id="logo-large"><a href="#">housy<span></span></a></div>
+                <div id="social-media">
+                    <a href="https://www.google.com" target="_blank"><div><i class="fa fa-google" aria-hidden="true"></i></div></a>
+                    <a href="https://www.facebook.com" target="_blank"><div><i class="fa fa-facebook" aria-hidden="true"></i></div></a>
+                    <a href="https://www.twitter.com" target="_blank"><div><i class="fa fa-twitter" aria-hidden="true"></i></div></a>
+                    <a href="https://www.instagram.com" target="_blank"><div><i class="fa fa-instagram" aria-hidden="true"></i></div></a>
+                </div>
+            </div>
+            <div id="bottom-navigation">
+                <div>
+                    <h6>Home</h6>
+                    <ul>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Featured</li></a>
+                        <a href="#"><li>Services</li></a>
+                        <a href="#"><li>Feedback</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Sitemap</h6>
+                    <ul>
+                        <a href="#"><li>Projections</li></a>
+                        <a href="#"><li>Investments</li></a>
+                        <a href="#"><li>Location</li></a>
+                        <a href="#"><li>Map</li></a>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Company</h6>
+                    <ul>
+                        <a href="#"><li>Services</li></a>
+                        <a href="#"><li>Contact</li></a>
+                        <a href="#"><li>Reviews</li></a>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div>
+                    <h6>Discover</h6>
+                    <ul>
+                        <a href="#"><li>Trust and Security</li></a>
+                        <a href="#"><li>Owner portal</li></a>
+                        <a href="#"><li>Terms</li></a>
+                        <a href="#"><li>Houses</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="subscribe">
+                <h6>Subscribe</h6>
+                <div id="mailing-list-form">
+                    <form action="#" method="POST">
+                        <input type="email" name="email" id="mailing-list-email" placeholder="Email address">
+                        <button type="submit">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="copyright-credits">
+        <div class="container">
+            <span>Design by
+                <a target="_blank" href="https://dribbble.com/shots/5458649-Real-Estate-Landing-Page/attachments/1181679">
+                    <strong>Farzan Faruk</strong>
+                </a>
+            </span>
+        </div>
+    </section>
 </body>
 </html>

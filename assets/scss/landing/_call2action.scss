@@ -1,0 +1,91 @@
+#call-to-action {
+    margin-top: 135px;
+
+    .container {
+        width: 85%;
+        text-align: center;
+    }
+}
+
+#call-to-action-left {
+    width: 455px;
+    height: 570px;
+    display: inline-block;
+    background: url('../../img/c2a-sell.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+#call-to-action-right {
+    width: 650px;
+    height: 420px;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-left: 20px;
+    background: url('../../img/c2a-buy.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    bottom: 23px;
+}
+
+#c2a-left-dialog {
+    position: absolute;
+    left: 77px;
+    bottom: -58px;
+    z-index: 1;
+}
+
+#c2a-right-dialog {
+    position: absolute;
+    left: 89px;
+    top: -122px;
+}
+
+.c2a-dialog {
+    width: 380px;
+    height: 185px;
+    text-align: left;
+    background-color: white;
+    padding: 30px 45px 0 45px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 58px 115px 6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 58px 115px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 58px 115px 6px rgba(0, 0, 0, 0.1);
+
+    div:last-child {
+        margin-top: 26px;
+        text-align: right;
+    }
+
+    i {
+        color: $paleBrown;
+        margin-right: 30px;
+    }
+}
+
+.c2a-text {
+    font-size: 22px;
+    color: $offBlack;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+.c2a-link {
+    font-size: 18px;
+    color: $offBlack;
+    margin-right: 42px;
+
+    span {
+        padding: 12px 5px 12px 2px;
+        color: white;
+        background-color: $paleBrown;
+    }
+}
