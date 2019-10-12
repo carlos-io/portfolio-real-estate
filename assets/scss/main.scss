@@ -152,6 +152,64 @@ p {
             }
         }
     }
+
+    #search {
+        top: -70px;
+
+        .container {
+            width: 90%;
+        }
+
+        #general {
+            li {
+                a {
+                    padding: 9px 21px;
+                }
+            }
+        }
+
+        #specifics {
+            margin-top: 14px;
+            padding: 16px 26px;
+            width: 80%;
+            max-width: 375px;
+            display: block;
+
+
+            #location, #type, #price {
+                text-align: center;
+            }
+
+            #type, #price {
+                margin-top: 25px;
+            }
+
+            #search-button {
+                div {
+                    padding: 8px;
+                    margin: 25px auto 5px auto;
+                    width: 80%;
+                }
+
+                i {
+                    font-size: 16px;
+                }
+            }
+
+            .filter-type {
+                font-size: 16px;
+            }
+
+            .filter-dropdown {
+                font-size: 16px;
+            }
+
+            .filter-value {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -177,6 +235,12 @@ p {
                     }
                 }
             }
+        }
+    }
+
+    #search {
+        .container {
+            width: 90%;
         }
     }
 }
