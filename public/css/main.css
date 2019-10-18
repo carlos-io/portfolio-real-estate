@@ -312,19 +312,24 @@ table {
   width: 100%;
 }
 
-#featured-menu {
+#featured .container:last-child {
+  margin-top: 65px;
+}
+
+#featured #featured-menu {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  width: 95%;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
-#featured-menu div {
+#featured #featured-menu li {
   display: inline-block;
 }
 
-#featured-menu li {
-  display: inline-block;
-}
-
-#featured-menu li:hover {
+#featured #featured-menu li:hover {
   color: #333;
   border-bottom: 1px solid #694137;
   -webkit-box-shadow: inset 0px -4px 0px 0px #694137;
@@ -332,36 +337,25 @@ table {
   box-shadow: inset 0px -4px 0px 0px #694137;
 }
 
-#featured-menu a {
+#featured #featured-menu a {
   color: #adadad;
   font-size: 18px;
 }
 
-#featured-menu .featured-menu-links li {
-  width: 180px;
+#featured #featured-menu .featured-menu-links li {
+  width: 50%;
   border-bottom: 1px solid #c0c3cb;
-  margin: 0 -2px;
+  margin: 0 -1px;
   padding-bottom: 20px;
   transition: 0.1s ease-in-out;
 }
 
-#featured-menu .featured-head-title {
-  margin: 0 90px;
-  position: relative;
-  top: 9px;
-}
-
-#featured-menu .container:last-child {
-  margin-top: 65px;
-}
-
-#featured-items {
+#featured #featured-items {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.featured-item {
+#featured #featured-items .featured-item {
   display: inline-block;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -369,8 +363,8 @@ table {
   margin: 0 5px;
 }
 
-.featured-item-img {
-  width: 275px;
+#featured #featured-items .featured-item-img {
+  width: 100%;
   height: 370px;
   -webkit-border-top-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
@@ -384,51 +378,57 @@ table {
   background-size: cover;
 }
 
-.featured-item-img-1 {
+#featured #featured-items .featured-item-img-1 {
   background: url("../../img/featured-1.jpg") no-repeat center center;
 }
 
-.featured-item-img-2 {
+#featured #featured-items .featured-item-img-2 {
   background: url("../../img/featured-2.jpg") no-repeat center center;
 }
 
-.featured-item-img-3 {
+#featured #featured-items .featured-item-img-3 {
   background: url("../../img/featured-3.jpg") no-repeat center center;
 }
 
-.featured-item-img-4 {
+#featured #featured-items .featured-item-img-4 {
   background: url("../../img/featured-4.jpg") no-repeat center center;
 }
 
-.featured-item-title, .featured-item-details {
+#featured #featured-items .featured-item-title {
+  margin-right: 17px;
+  height: 30px;
+}
+
+#featured #featured-items .featured-item-title, #featured #featured-items .featured-item-details {
   margin-top: 17px;
   margin-left: 17px;
   font-size: 16px;
 }
 
-.featured-item-details {
+#featured #featured-items .featured-item-details {
   margin-bottom: 19px;
 }
 
-.featured-item-details span {
+#featured #featured-items .featured-item-details span {
   padding-right: 6px;
   /* color: #adadad; */
   color: #d9d9d9;
 }
 
-.featured-item-rooms, .featured-item-baths, .featured-item-price {
+#featured #featured-items .featured-item-details .featured-item-rooms, #featured #featured-items .featured-item-details .featured-item-baths, #featured #featured-items .featured-item-details .featured-item-price {
   display: inline-block;
   padding-right: 23px;
 }
 
-.featured-item-baths, .featured-item-price {
+#featured #featured-items .featured-item-details .featured-item-baths, #featured #featured-items .featured-item-details .featured-item-price {
   padding-left: 20px;
   border-left: 1px solid #adadad;
 }
 
-#featured-navigation {
+#featured #featured-navigation {
   margin-top: 38px;
   text-align: right;
+  max-width: 1600px;
 }
 
 #reasons {
@@ -1190,6 +1190,7 @@ p {
     width: 80%;
     max-width: 375px;
     display: block;
+    position: relative;
   }
   #search #specifics #location, #search #specifics #type, #search #specifics #price {
     text-align: center;
@@ -1215,6 +1216,62 @@ p {
     font-size: 20px;
     text-align: center;
   }
+  #featured {
+    margin-top: -40px;
+  }
+  #featured .container:last-child {
+    margin-top: 10px;
+    width: 90%;
+  }
+  #featured #featured-menu {
+    width: 80%;
+    max-width: 400px;
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #featured #featured-menu div {
+    margin-bottom: 22px;
+  }
+  #featured #featured-menu div:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+  #featured #featured-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 14px;
+    column-gap: 14px;
+    margin: 10px auto 0 auto;
+    align-items: start;
+  }
+  #featured #featured-items .featured-item {
+    width: 100%;
+    margin: 0;
+  }
+  #featured #featured-items .featured-item-img {
+    width: 100%;
+    height: 250px;
+  }
+  #featured #featured-items .featured-item-details {
+    font-size: 13px;
+  }
+  #featured #featured-items .featured-item-details .featured-item-rooms, #featured #featured-items .featured-item-details .featured-items-baths {
+    padding-right: 5%;
+  }
+  #featured #featured-items .featured-item-details .featured-item-baths {
+    padding-left: 10px;
+  }
+  #featured #featured-items .featured-item-details .featured-item-price {
+    padding-left: unset;
+    border-left: unset;
+    display: block;
+    margin-top: 10px;
+  }
+  #featured #featured-navigation {
+    margin-top: 10px;
+    position: relative;
+    right: 5px;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -1231,5 +1288,29 @@ p {
   }
   #search .container {
     width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+  #featured .container:first-child {
+    width: 95%;
+  }
+  #featured .container:last-child {
+    width: 90%;
+  }
+  #featured #featured-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 14px;
+  }
+  #featured #featured-items .featured-item {
+    min-width: 150px;
+    width: 100%;
+  }
+  #featured #featured-items .featured-item-details .featured-item-price {
+    padding-left: unset;
+    border-left: unset;
+    display: block;
+    margin-top: 10px;
   }
 }
