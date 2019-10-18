@@ -5,67 +5,67 @@
     .container {
         width: 979px;
     }
-}
 
-#reasons-header {
-    p {
-        span {
-            color: $offBlack;
-            font-weight: bold;
+    #reasons-header {
+        p {
+            span {
+                color: $offBlack;
+                font-weight: bold;
+            }
         }
     }
-}
 
-#reasons-details {
-    border-bottom: 1px solid #c0c3cb;
-}
+    #reasons-details {
+        border-bottom: 1px solid #c0c3cb;
 
-.reasons-details-container {
-    &:nth-child(2) {
-        margin: 76px 85px 0 85px;
-    }
+        .reasons-details-container {
+            &:nth-child(2) {
+                margin: 76px 85px 0 85px;
+            }
 
-    margin-top: 76px;
-    display: inline-block;
-    padding: 47px 0 47px 0;
-    width: 267px;
-    -webkit-border-top-left-radius: 90px;
-    -moz-border-radius-topleft: 90px;
-    border-top-left-radius: 90px;
-    -webkit-border-top-right-radius: 90px;
-    -moz-border-radius-topright: 90px;
-    border-top-right-radius: 90px;
-    transition: 0.1s ease-in-out;
+            margin-top: 76px;
+            display: inline-block;
+            padding: 47px 0 47px 0;
+            width: 267px;
+            -webkit-border-top-left-radius: 90px;
+            -moz-border-radius-topleft: 90px;
+            border-top-left-radius: 90px;
+            -webkit-border-top-right-radius: 90px;
+            -moz-border-radius-topright: 90px;
+            border-top-right-radius: 90px;
+            transition: 0.1s ease-in-out;
 
-    &:hover {
-        -webkit-box-shadow: inset 0px -7px 0px 0px $paleBrown,
+            &:hover {
+                -webkit-box-shadow: inset 0px -7px 0px 0px $paleBrown,
+                                    inset 0px 0px 0px 4px #F0EDEC,
+                                    0px 35px 63px 6px rgba(0, 0, 0, 0.06);
+                -moz-box-shadow: inset 0px -7px 0px 0px $paleBrown,
+                                 inset 0px 0px 0px 4px #F0EDEC,
+                                 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
+                box-shadow: inset 0px -7px 0px 0px $paleBrown,
                             inset 0px 0px 0px 4px #F0EDEC,
                             0px 35px 63px 6px rgba(0, 0, 0, 0.06);
-        -moz-box-shadow: inset 0px -7px 0px 0px $paleBrown,
-                         inset 0px 0px 0px 4px #F0EDEC,
-                         0px 35px 63px 6px rgba(0, 0, 0, 0.06);
-        box-shadow: inset 0px -7px 0px 0px $paleBrown,
-                    inset 0px 0px 0px 4px #F0EDEC,
-                          0px 35px 63px 6px rgba(0, 0, 0, 0.06);
-        -webkit-border-top-left-radius: 90px;
-        -moz-border-radius-topleft: 90px;
-        border-top-left-radius: 90px;
-        -webkit-border-top-right-radius: 90px;
-        -moz-border-radius-topright: 90px;
-        border-top-right-radius: 90px;
-    }
+                -webkit-border-top-left-radius: 90px;
+                -moz-border-radius-topleft: 90px;
+                border-top-left-radius: 90px;
+                -webkit-border-top-right-radius: 90px;
+                -moz-border-radius-topright: 90px;
+                border-top-right-radius: 90px;
+            }
 
-    div {
-        img {
-            width: 135px;
-            height: 135px;
-        }
+            div {
+                img {
+                    width: 135px;
+                    height: 135px;
+                }
 
-        p {
-            font-size: 18px;
-            margin-top: 22px;
-            font-weight: bold;
-            color: $offBlack;
+                p {
+                    font-size: 18px;
+                    margin-top: 22px;
+                    font-weight: bold;
+                    color: $offBlack;
+                }
+            }
         }
     }
 }
