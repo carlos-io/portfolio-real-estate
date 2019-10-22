@@ -296,6 +296,45 @@ p {
             }
         }
     }
+
+    #weekly-house {
+        margin-top: 50px;
+        height: 480px;
+
+        #weekly-house-highlight {
+            div {
+                margin: 15px 15px;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                    margin-top: 5px;
+                    line-height: 1.0;
+                }
+            }
+        }
+
+        #weekly-house-tour-button {
+            width: 158px;
+            height: 132px;
+            margin: -65px auto;
+
+            div {
+                &:nth-child(1) {
+                    top: 20px;
+                    left: 50px;
+                }
+
+                &:nth-child(2) {
+                    top: 95px;
+                    left: 30px;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -311,7 +350,7 @@ p {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 815px) {
+@media only screen and (min-width: 768px) and (max-width: 852px) {
     #top {
         #navigation {
             #links {
@@ -331,19 +370,35 @@ p {
     }
 
     #reasons {
+        #reasons-details {
+            border-bottom: unset;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #reasons {
         .container {
             width: 95%;
         }
 
         #reasons-details {
-            border-bottom: unset;
-
             .reasons-details-container {
                 margin-top: 40px;
 
                 &:nth-child(2) {
                     margin: 40px 0 0 0;
                 }
+            }
+        }
+    }
+
+    #weekly-house {
+        margin-top: 75px;
+
+        #weekly-house-highlight {
+            div {
+                margin: 50px 80px;
             }
         }
     }

@@ -501,24 +501,24 @@ table {
   background-size: cover;
 }
 
-#weekly-house-highlight {
+#weekly-house #weekly-house-highlight {
   width: 50%;
   height: 50%;
   background: white;
   position: relative;
 }
 
-#weekly-house-highlight div {
+#weekly-house #weekly-house-highlight div {
   position: absolute;
   margin: 80px 160px;
 }
 
-#weekly-house-highlight div p {
+#weekly-house #weekly-house-highlight div p {
   margin-top: 23px;
   line-height: 2.0;
 }
 
-#weekly-house-tour-button {
+#weekly-house #weekly-house-tour-button {
   width: 198px;
   height: 166px;
   background-color: #694137;
@@ -530,11 +530,11 @@ table {
   margin: -83px auto;
 }
 
-#weekly-house-tour-button div {
+#weekly-house #weekly-house-tour-button div {
   color: white;
 }
 
-#weekly-house-tour-button div:nth-child(1) {
+#weekly-house #weekly-house-tour-button div:nth-child(1) {
   width: 53px;
   height: 53px;
   -webkit-border-radius: 50%;
@@ -548,18 +548,18 @@ table {
   transition: 0.1s ease-in-out;
 }
 
-#weekly-house-tour-button div:nth-child(1):hover {
+#weekly-house #weekly-house-tour-button div:nth-child(1):hover {
   background-color: #694137;
   border: 3px solid white;
 }
 
-#weekly-house-tour-button div i {
+#weekly-house #weekly-house-tour-button div i {
   margin-top: 21px;
   margin-left: 2px;
   font-size: 10px;
 }
 
-#weekly-house-tour-button div:nth-child(2) {
+#weekly-house #weekly-house-tour-button div:nth-child(2) {
   position: absolute;
   top: 109px;
   left: 50px;
@@ -1284,6 +1284,34 @@ p {
   #reasons #reasons-details .reasons-details-container:nth-child(2) {
     margin: 5px 0 0 0;
   }
+  #weekly-house {
+    margin-top: 50px;
+    height: 480px;
+  }
+  #weekly-house #weekly-house-highlight div {
+    margin: 15px 15px;
+  }
+  #weekly-house #weekly-house-highlight div h2 {
+    font-size: 20px;
+  }
+  #weekly-house #weekly-house-highlight div p {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.0;
+  }
+  #weekly-house #weekly-house-tour-button {
+    width: 158px;
+    height: 132px;
+    margin: -65px auto;
+  }
+  #weekly-house #weekly-house-tour-button div:nth-child(1) {
+    top: 20px;
+    left: 50px;
+  }
+  #weekly-house #weekly-house-tour-button div:nth-child(2) {
+    top: 95px;
+    left: 30px;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -1294,24 +1322,33 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 815px) {
+@media only screen and (min-width: 768px) and (max-width: 852px) {
   #top #navigation #links ul li {
     padding-right: 20px;
   }
   #search .container {
     width: 90%;
   }
-  #reasons .container {
-    width: 95%;
-  }
   #reasons #reasons-details {
     border-bottom: unset;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #reasons .container {
+    width: 95%;
   }
   #reasons #reasons-details .reasons-details-container {
     margin-top: 40px;
   }
   #reasons #reasons-details .reasons-details-container:nth-child(2) {
     margin: 40px 0 0 0;
+  }
+  #weekly-house {
+    margin-top: 75px;
+  }
+  #weekly-house #weekly-house-highlight div {
+    margin: 50px 80px;
   }
 }
 
