@@ -19,10 +19,6 @@
         border-bottom: 1px solid #c0c3cb;
 
         .reasons-details-container {
-            &:nth-child(2) {
-                margin: 76px 85px 0 85px;
-            }
-
             margin-top: 76px;
             display: inline-block;
             padding: 47px 0 47px 0;
@@ -34,6 +30,10 @@
             -moz-border-radius-topright: 90px;
             border-top-right-radius: 90px;
             transition: 0.1s ease-in-out;
+
+            &:nth-child(2) {
+                margin: 76px 85px 0 85px;
+            }
 
             &:hover {
                 -webkit-box-shadow: inset 0px -7px 0px 0px $paleBrown,

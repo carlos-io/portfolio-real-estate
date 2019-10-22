@@ -278,6 +278,24 @@ p {
             right: 5px;
         }
     }
+
+    #reasons {
+        .container {
+            width: 95%;
+        }
+
+        #reasons-details {
+            border-bottom: unset;
+
+            .reasons-details-container {
+                margin-top: 5px;
+
+                &:nth-child(2) {
+                    margin: 5px 0 0 0;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -309,6 +327,24 @@ p {
     #search {
         .container {
             width: 90%;
+        }
+    }
+
+    #reasons {
+        .container {
+            width: 95%;
+        }
+
+        #reasons-details {
+            border-bottom: unset;
+
+            .reasons-details-container {
+                margin-top: 40px;
+
+                &:nth-child(2) {
+                    margin: 40px 0 0 0;
+                }
+            }
         }
     }
 }

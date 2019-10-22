@@ -440,16 +440,16 @@ table {
   width: 979px;
 }
 
-#reasons-header p span {
+#reasons #reasons-header p span {
   color: #333;
   font-weight: bold;
 }
 
-#reasons-details {
+#reasons #reasons-details {
   border-bottom: 1px solid #c0c3cb;
 }
 
-.reasons-details-container {
+#reasons #reasons-details .reasons-details-container {
   margin-top: 76px;
   display: inline-block;
   padding: 47px 0 47px 0;
@@ -463,11 +463,11 @@ table {
   transition: 0.1s ease-in-out;
 }
 
-.reasons-details-container:nth-child(2) {
+#reasons #reasons-details .reasons-details-container:nth-child(2) {
   margin: 76px 85px 0 85px;
 }
 
-.reasons-details-container:hover {
+#reasons #reasons-details .reasons-details-container:hover {
   -webkit-box-shadow: inset 0px -7px 0px 0px #694137, inset 0px 0px 0px 4px #F0EDEC, 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: inset 0px -7px 0px 0px #694137, inset 0px 0px 0px 4px #F0EDEC, 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
   box-shadow: inset 0px -7px 0px 0px #694137, inset 0px 0px 0px 4px #F0EDEC, 0px 35px 63px 6px rgba(0, 0, 0, 0.06);
@@ -479,12 +479,12 @@ table {
   border-top-right-radius: 90px;
 }
 
-.reasons-details-container div img {
+#reasons #reasons-details .reasons-details-container div img {
   width: 135px;
   height: 135px;
 }
 
-.reasons-details-container div p {
+#reasons #reasons-details .reasons-details-container div p {
   font-size: 18px;
   margin-top: 22px;
   font-weight: bold;
@@ -1272,6 +1272,18 @@ p {
     position: relative;
     right: 5px;
   }
+  #reasons .container {
+    width: 95%;
+  }
+  #reasons #reasons-details {
+    border-bottom: unset;
+  }
+  #reasons #reasons-details .reasons-details-container {
+    margin-top: 5px;
+  }
+  #reasons #reasons-details .reasons-details-container:nth-child(2) {
+    margin: 5px 0 0 0;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -1288,6 +1300,18 @@ p {
   }
   #search .container {
     width: 90%;
+  }
+  #reasons .container {
+    width: 95%;
+  }
+  #reasons #reasons-details {
+    border-bottom: unset;
+  }
+  #reasons #reasons-details .reasons-details-container {
+    margin-top: 40px;
+  }
+  #reasons #reasons-details .reasons-details-container:nth-child(2) {
+    margin: 40px 0 0 0;
   }
 }
 
