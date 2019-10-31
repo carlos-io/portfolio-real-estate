@@ -776,11 +776,11 @@ table {
   text-align: center;
 }
 
-#contact-header h2 {
+#contact #contact-header h2 {
   font-size: 32px;
 }
 
-#contact-header h4 {
+#contact #contact-header h4 {
   font-size: 20px;
   color: #adadad;
   letter-spacing: 9px;
@@ -788,7 +788,7 @@ table {
   margin-top: 44px;
 }
 
-#contact-form {
+#contact #contact-form {
   margin: 50px auto 0 auto;
   width: 508px;
   height: 260px;
@@ -800,16 +800,16 @@ table {
   position: relative;
 }
 
-#contact-form form textarea {
+#contact #contact-form form textarea {
   resize: none;
 }
 
-#contact-form form input {
+#contact #contact-form form input {
   margin-top: 30px;
 }
 
-#contact-form form textarea,
-#contact-form form input {
+#contact #contact-form form textarea,
+#contact #contact-form form input {
   display: block;
   text-align: left;
   font-size: 25px;
@@ -819,18 +819,18 @@ table {
   width: 100%;
 }
 
-#contact-form form textarea::placeholder,
-#contact-form form input::placeholder {
+#contact #contact-form form textarea::placeholder,
+#contact #contact-form form input::placeholder {
   font-size: 18px;
 }
 
-#contact-form form textarea:focus,
-#contact-form form input:focus {
+#contact #contact-form form textarea:focus,
+#contact #contact-form form input:focus {
   outline: none;
   color: black;
 }
 
-#contact-form form button {
+#contact #contact-form form button {
   padding: 14px 14px;
   background-color: #694137;
   border: 0;
@@ -843,7 +843,7 @@ table {
   transition: 0.1s ease-in-out;
 }
 
-#contact-form form button i {
+#contact #contact-form form button i {
   font-size: 32px;
   font-weight: bold;
   color: white;
@@ -859,7 +859,7 @@ table {
   /* W3C */
 }
 
-#contact-form form button:hover {
+#contact #contact-form form button:hover {
   background-color: white;
   -webkit-box-shadow: inset 0px 0px 0px 3px #CFC4C3;
   -moz-box-shadow: inset 0px 0px 0px 3px #CFC4C3;
@@ -869,11 +869,11 @@ table {
   cursor: pointer;
 }
 
-#contact-form form button:hover i {
+#contact #contact-form form button:hover i {
   color: #694137;
 }
 
-#contact-background img {
+#contact #contact-background img {
   width: 820px;
 }
 
