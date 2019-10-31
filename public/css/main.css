@@ -1358,6 +1358,45 @@ p {
     font-size: 14px;
     margin-right: 30px;
   }
+  #reviews .container {
+    width: 90%;
+    top: -165px;
+  }
+  #reviews #review-left {
+    width: unset;
+    height: 480px;
+  }
+  #reviews #review-left > div {
+    margin: unset;
+  }
+  #reviews #review-left #review-quote {
+    width: 65px;
+    height: 65px;
+  }
+  #reviews #review-left #review-quote p {
+    font-size: 100px;
+  }
+  #reviews #review-left #review-text {
+    font-size: 14px;
+    line-height: 1.9;
+    margin-top: 15px;
+  }
+  #reviews #review-left #reviewer {
+    margin-top: 27px !important;
+  }
+  #reviews #review-left #reviewer #reviewer-name-title {
+    left: 10px;
+  }
+  #reviews #review-left #reviewer #reviewer-name-title p:last-child {
+    font-size: 12px;
+  }
+  #reviews #review-left #review-nav {
+    margin-left: unset !important;
+    top: unset;
+  }
+  #reviews #review-right {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -1406,6 +1445,19 @@ p {
   }
   #weekly-house #weekly-house-highlight div {
     margin: 50px 80px;
+  }
+  #reviews .container {
+    width: 90%;
+    top: -30px;
+  }
+  #reviews #review-left > div {
+    margin: 0 10px 0 0;
+  }
+  #reviews #review-right {
+    top: 85px;
+  }
+  #reviews #review-right img {
+    width: 100%;
   }
 }
 

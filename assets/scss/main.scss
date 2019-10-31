@@ -391,6 +391,60 @@ p {
             }
         }
     }
+
+    #reviews {
+        .container {
+            width: 90%;
+            top: -165px;
+        }
+
+        #review-left {
+            width: unset;
+            height: 480px;
+
+            & > div {
+                margin: unset;
+            }
+
+            #review-quote {
+                width: 65px;
+                height: 65px;
+
+                p {
+                    font-size: 100px;
+                }
+            }
+
+            #review-text {
+                font-size: 14px;
+                line-height: 1.9;
+                margin-top: 15px;
+            }
+
+            #reviewer {
+                margin-top: 27px !important;
+
+                #reviewer-name-title {
+                    left: 10px;
+
+                    p {
+                        &:last-child {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            #review-nav {
+                margin-left: unset !important;
+                top: unset;
+            }
+        }
+
+        #review-right {
+            display: none;
+        }
+    }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -472,6 +526,27 @@ p {
         #weekly-house-highlight {
             div {
                 margin: 50px 80px;
+            }
+        }
+    }
+
+    #reviews {
+        .container {
+            width: 90%;
+            top: -30px;
+        }
+
+        #review-left {
+            & > div {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        #review-right {
+            top: 85px;
+
+            img {
+                width: 100%;
             }
         }
     }
