@@ -575,7 +575,7 @@ table {
   text-align: center;
 }
 
-#call-to-action-left {
+#call-to-action .container #call-to-action-left {
   width: 455px;
   height: 570px;
   display: inline-block;
@@ -587,7 +587,14 @@ table {
   position: relative;
 }
 
-#call-to-action-right {
+#call-to-action .container #call-to-action-left #c2a-left-dialog {
+  position: absolute;
+  left: 77px;
+  bottom: -58px;
+  z-index: 1;
+}
+
+#call-to-action .container #call-to-action-right {
   width: 650px;
   height: 420px;
   vertical-align: bottom;
@@ -602,20 +609,13 @@ table {
   bottom: 23px;
 }
 
-#c2a-left-dialog {
-  position: absolute;
-  left: 77px;
-  bottom: -58px;
-  z-index: 1;
-}
-
-#c2a-right-dialog {
+#call-to-action .container #call-to-action-right #c2a-right-dialog {
   position: absolute;
   left: 89px;
   top: -122px;
 }
 
-.c2a-dialog {
+#call-to-action .container .c2a-dialog {
   width: 380px;
   height: 185px;
   text-align: left;
@@ -629,30 +629,30 @@ table {
   box-shadow: 0px 58px 115px 6px rgba(0, 0, 0, 0.1);
 }
 
-.c2a-dialog div:last-child {
+#call-to-action .container .c2a-dialog div:last-child {
   margin-top: 26px;
   text-align: right;
 }
 
-.c2a-dialog i {
+#call-to-action .container .c2a-dialog i {
   color: #694137;
   margin-right: 30px;
 }
 
-.c2a-text {
+#call-to-action .container .c2a-dialog .c2a-text {
   font-size: 22px;
   color: #333;
   line-height: 1.5;
   margin-top: 0;
 }
 
-.c2a-link {
+#call-to-action .container .c2a-dialog .c2a-link {
   font-size: 18px;
   color: #333;
   margin-right: 42px;
 }
 
-.c2a-link span {
+#call-to-action .container .c2a-dialog .c2a-link span {
   padding: 12px 5px 12px 2px;
   color: white;
   background-color: #694137;
@@ -1312,9 +1312,55 @@ p {
     top: 95px;
     left: 30px;
   }
+  #call-to-action {
+    margin-top: 85px;
+  }
+  #call-to-action .container {
+    width: 90%;
+  }
+  #call-to-action .container #call-to-action-left {
+    width: 100%;
+    height: 480px;
+  }
+  #call-to-action .container #call-to-action-left #c2a-left-dialog {
+    left: 0;
+    bottom: 0;
+    z-index: unset;
+  }
+  #call-to-action .container #call-to-action-right {
+    width: 100%;
+    height: 480px;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  #call-to-action .container #call-to-action-right #c2a-right-dialog {
+    left: 0;
+    top: unset;
+    bottom: 0;
+  }
+  #call-to-action .container .c2a-dialog {
+    width: 100%;
+    height: unset;
+    padding: 0;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    border-radius: unset;
+  }
+  #call-to-action .container .c2a-dialog div:last-child {
+    margin: 10px 0;
+    padding: 15px 0;
+  }
+  #call-to-action .container .c2a-dialog .c2a-text {
+    font-size: 16px;
+    margin: 10px 10px 10px 15px;
+  }
+  #call-to-action .container .c2a-dialog .c2a-link {
+    font-size: 14px;
+    margin-right: 30px;
+  }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 767px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
   #top #opening #statement {
     width: 260px;
     font-size: 55px;
@@ -1349,6 +1395,46 @@ p {
   }
   #weekly-house #weekly-house-highlight div {
     margin: 50px 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1328px) {
+  #call-to-action {
+    margin-top: 85px;
+  }
+  #call-to-action .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 15px;
+    align-items: end;
+  }
+  #call-to-action .container #call-to-action-left {
+    width: 100%;
+  }
+  #call-to-action .container #call-to-action-left #c2a-left-dialog {
+    width: 85%;
+    left: 15%;
+    bottom: -40px;
+  }
+  #call-to-action .container #call-to-action-right {
+    width: 100%;
+    margin-top: 23px;
+    margin-left: 0;
+  }
+  #call-to-action .container #call-to-action-right #c2a-right-dialog {
+    left: 20%;
+  }
+  #call-to-action .container .c2a-dialog {
+    width: 50%;
+    max-width: 320px;
+    padding: 15px 23px 0 23px;
+  }
+  #call-to-action .container .c2a-dialog .c2a-text {
+    font-size: 18px;
+  }
+  #call-to-action .container .c2a-dialog .c2a-link {
+    font-size: 14px;
   }
 }
 

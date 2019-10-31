@@ -335,11 +335,66 @@ p {
             }
         }
     }
+
+    #call-to-action {
+        margin-top: 85px;
+
+        .container {
+            width: 90%;
+
+            #call-to-action-left {
+                width: 100%;
+                height: 480px;
+
+                #c2a-left-dialog {
+                    left: 0;
+                    bottom: 0;
+                    z-index: unset;
+                }
+            }
+
+            #call-to-action-right {
+                width: 100%;
+                height: 480px;
+                margin-top: 50px;
+                margin-left: 0;
+
+                #c2a-right-dialog {
+                    left: 0;
+                    top: unset;
+                    bottom: 0;
+                }
+            }
+
+            .c2a-dialog {
+                width: 100%;
+                height: unset;
+                padding: 0;
+                -webkit-border-radius: unset;
+                -moz-border-radius: unset;
+                border-radius: unset;
+
+                div:last-child {
+                    margin: 10px 0;
+                    padding: 15px 0;
+                }
+
+                .c2a-text {
+                    font-size: 16px;
+                    margin: 10px 10px 10px 15px;
+                }
+
+                .c2a-link {
+                    font-size: 14px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 767px) {
+@media only screen and (min-width: 425px) and (max-width: 767px) {
     #top {
-
         #opening {
             #statement {
                 width: 260px;
@@ -399,6 +454,54 @@ p {
         #weekly-house-highlight {
             div {
                 margin: 50px 80px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1328px) {
+    #call-to-action {
+        margin-top: 85px;
+
+        .container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            column-gap: 15px;
+            align-items: end;
+
+            #call-to-action-left {
+                width: 100%;
+
+                #c2a-left-dialog {
+                    width: 85%;
+                    left: 15%;
+                    bottom: -40px;
+                }
+            }
+
+            #call-to-action-right {
+                width: 100%;
+                margin-top: 23px;
+                margin-left: 0;
+
+                #c2a-right-dialog {
+                    left: 20%;
+                }
+            }
+
+            .c2a-dialog {
+                width: 50%;
+                max-width: 320px;
+                padding: 15px 23px 0 23px;
+
+                .c2a-text {
+                    font-size: 18px;
+                }
+
+                .c2a-link {
+                    font-size: 14px;
+                }
             }
         }
     }
