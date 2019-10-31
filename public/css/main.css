@@ -1295,7 +1295,7 @@ p {
     font-size: 20px;
   }
   #weekly-house #weekly-house-highlight div p {
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 5px;
     line-height: 1.0;
   }
@@ -1365,6 +1365,17 @@ p {
     width: 260px;
     font-size: 55px;
     letter-spacing: -3px;
+  }
+  #weekly-house #weekly-house-highlight div {
+    margin: 20px 20px;
+  }
+  #weekly-house #weekly-house-highlight div h2 {
+    font-size: 20px;
+  }
+  #weekly-house #weekly-house-highlight div p {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.6;
   }
 }
 
