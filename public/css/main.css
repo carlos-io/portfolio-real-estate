@@ -894,22 +894,22 @@ table {
   text-align: left;
 }
 
-#logo-social {
+#bottom #logo-social {
   position: relative;
   top: 11px;
 }
 
-#logo-large {
+#bottom #logo-social #logo-large {
   font-size: 38px;
   letter-spacing: -2px;
   position: relative;
 }
 
-#logo-large a {
+#bottom #logo-social #logo-large a {
   color: white;
 }
 
-#logo-large span {
+#bottom #logo-social #logo-large span {
   height: 10px;
   width: 10px;
   background-color: white;
@@ -921,11 +921,11 @@ table {
   left: 109px;
 }
 
-#social-media {
+#bottom #logo-social #social-media {
   margin-top: 38px;
 }
 
-#social-media div {
+#bottom #logo-social #social-media div {
   display: inline-block;
   width: 37px;
   height: 37px;
@@ -937,48 +937,48 @@ table {
   margin-right: 14px;
 }
 
-#social-media i {
+#bottom #logo-social #social-media i {
   position: absolute;
   top: 10px;
   left: 12px;
   color: white;
 }
 
-#social-media .fa-google-plus {
+#bottom #logo-social #social-media .fa-google-plus {
   left: 10px;
 }
 
-#social-media .fa-facebook {
+#bottom #logo-social #social-media .fa-facebook {
   left: 14px;
 }
 
-#bottom-navigation {
+#bottom #bottom-navigation {
   position: relative;
   margin-left: 45px;
 }
 
-#bottom-navigation > div {
+#bottom #bottom-navigation > div {
   display: inline-block;
   margin-right: 60px;
 }
 
-#bottom-navigation div h6 {
+#bottom #bottom-navigation div h6 {
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-#bottom-navigation div ul li {
+#bottom #bottom-navigation div ul li {
   font-size: 14px;
   font-weight: 200;
   color: #D2CAC9;
   line-height: 2.2;
 }
 
-#subscribe {
+#bottom #subscribe {
   vertical-align: top;
 }
 
-#mailing-list-form {
+#bottom #subscribe #mailing-list-form {
   margin-top: 24px;
   border: 2px solid #4C3B36;
   -webkit-border-radius: 3px;
@@ -986,7 +986,7 @@ table {
   border-radius: 3px;
 }
 
-#mailing-list-form input {
+#bottom #subscribe #mailing-list-form input {
   font-size: 14px;
   font-weight: 200;
   color: white;
@@ -996,31 +996,31 @@ table {
   width: 170px;
 }
 
-#mailing-list-form input::placeholder {
+#bottom #subscribe #mailing-list-form input::placeholder {
   font-size: 14px;
   font-weight: 200;
   color: #D2CAC9;
 }
 
-#mailing-list-form input:focus {
+#bottom #subscribe #mailing-list-form input:focus {
   outline: 0;
 }
 
-#mailing-list-form button {
+#bottom #subscribe #mailing-list-form button {
   border: 0;
   background-color: #3C2821;
 }
 
-#mailing-list-form button:hover {
+#bottom #subscribe #mailing-list-form button:hover {
   cursor: pointer;
 }
 
-#mailing-list-form button:focus {
+#bottom #subscribe #mailing-list-form button:focus {
   border: 0;
   outline: 0;
 }
 
-#mailing-list-form button i {
+#bottom #subscribe #mailing-list-form button i {
   color: #D2CAC9;
   font-size: 16px;
   margin-right: 8px;
