@@ -472,6 +472,58 @@ p {
             }
         }
     }
+
+    #bottom {
+        .container {
+            padding-top: 40px;
+            width: 95%;
+        }
+
+        #logo-social {
+            top: unset;
+            left: 7px;
+            text-align: center;
+
+            #logo-large {
+                span {
+                    left: unset;
+                }
+            }
+
+            #social-media {
+                margin-top: 20px;
+            }
+        }
+
+        #bottom-navigation {
+            margin: 50px auto 0 auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 30px;
+            padding-left: 15%;
+            max-width: 400px;
+
+            & > div {
+                margin-right: 0;
+            }
+
+            div {
+                ul {
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        #subscribe {
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -586,6 +638,31 @@ p {
             }
         }
     }
+
+    #bottom {
+        .container {
+            width: 90%;
+        }
+
+        #logo-social {
+            top: 30px;
+        }
+
+        #bottom-navigation {
+            margin: 0 auto 0 20px;
+            display: inline-flex;
+            align-content: space-between;
+            top: -104px;
+
+            & > div {
+                margin-right: 20px;
+            }
+        }
+
+        #subscribe {
+            display: none;
+        }
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1328px) {
@@ -663,6 +740,29 @@ p {
                     display: block;
                     margin-top: 10px;
                 }
+            }
+        }
+    }
+
+    #bottom {
+        .container {
+            width: 90%;
+            padding-bottom: unset;
+            height: 215px;
+        }
+
+        #logo-social {
+            top: 30px;
+        }
+
+        #bottom-navigation {
+            margin: 0 auto 0 20px;
+            display: inline-flex;
+            align-content: space-between;
+            top: -104px;
+
+            & > div {
+                margin-right: 20px;
             }
         }
     }
