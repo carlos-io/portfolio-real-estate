@@ -1397,6 +1397,24 @@ p {
   #reviews #review-right {
     display: none;
   }
+  #contact {
+    margin-top: -160px;
+  }
+  #contact .container {
+    width: 100%;
+  }
+  #contact #contact-form {
+    width: 70%;
+    height: 215px;
+    padding: 24px 30px 14px 30px;
+  }
+  #contact #contact-form form textarea,
+  #contact #contact-form form input {
+    font-size: 18px;
+  }
+  #contact #contact-background img {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
@@ -1458,6 +1476,10 @@ p {
   }
   #reviews #review-right img {
     width: 100%;
+  }
+  #contact #contact-background img {
+    width: 100%;
+    max-width: 820px;
   }
 }
 
