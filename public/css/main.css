@@ -63,7 +63,7 @@ table {
 }
 
 #top {
-  background: url("../../img/cabin-woods.jpg") no-repeat center center;
+  background: url("../img/cabin-woods.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -379,19 +379,19 @@ table {
 }
 
 #featured #featured-items .featured-item-img-1 {
-  background: url("../../img/featured-1.jpg") no-repeat center center;
+  background: url("../img/featured-1.jpg") no-repeat center center;
 }
 
 #featured #featured-items .featured-item-img-2 {
-  background: url("../../img/featured-2.jpg") no-repeat center center;
+  background: url("../img/featured-2.jpg") no-repeat center center;
 }
 
 #featured #featured-items .featured-item-img-3 {
-  background: url("../../img/featured-3.jpg") no-repeat center center;
+  background: url("../img/featured-3.jpg") no-repeat center center;
 }
 
 #featured #featured-items .featured-item-img-4 {
-  background: url("../../img/featured-4.jpg") no-repeat center center;
+  background: url("../img/featured-4.jpg") no-repeat center center;
 }
 
 #featured #featured-items .featured-item-title {
@@ -494,7 +494,7 @@ table {
 #weekly-house {
   margin-top: 144px;
   height: 675px;
-  background: url("../../img/weekly-1.jpg") no-repeat center center;
+  background: url("../img/weekly-1.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -579,7 +579,7 @@ table {
   width: 455px;
   height: 570px;
   display: inline-block;
-  background: url("../../img/c2a-sell.jpg") no-repeat center center;
+  background: url("../img/c2a-sell.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -600,7 +600,7 @@ table {
   vertical-align: bottom;
   display: inline-block;
   margin-left: 20px;
-  background: url("../../img/c2a-buy.jpg") no-repeat center center;
+  background: url("../img/c2a-buy.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
